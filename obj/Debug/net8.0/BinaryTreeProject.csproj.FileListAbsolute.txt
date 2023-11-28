@@ -1,0 +1,14 @@
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/bin/Debug/net8.0/BinaryTreeProject
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/bin/Debug/net8.0/BinaryTreeProject.deps.json
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/bin/Debug/net8.0/BinaryTreeProject.runtimeconfig.json
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/bin/Debug/net8.0/BinaryTreeProject.dll
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/bin/Debug/net8.0/BinaryTreeProject.pdb
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/obj/Debug/net8.0/BinaryTreeProject.GeneratedMSBuildEditorConfig.editorconfig
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/obj/Debug/net8.0/BinaryTreeProject.AssemblyInfoInputs.cache
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/obj/Debug/net8.0/BinaryTreeProject.AssemblyInfo.cs
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/obj/Debug/net8.0/BinaryTreeProject.csproj.CoreCompileInputs.cache
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/obj/Debug/net8.0/BinaryTreeProject.dll
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/obj/Debug/net8.0/refint/BinaryTreeProject.dll
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/obj/Debug/net8.0/BinaryTreeProject.pdb
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/obj/Debug/net8.0/BinaryTreeProject.genruntimeconfig.cache
+/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/obj/Debug/net8.0/ref/BinaryTreeProject.dll
