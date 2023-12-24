@@ -1,3 +1,4 @@
+// BED-C0M-15-19 DONNEX THOLERA KAMSONGA
 public class BinaryTree<T>
 {
     private class Node
@@ -63,27 +64,47 @@ public class BinaryTree<T>
 
     public void InorderTraversal()
     {
-        
+        Console.WriteLine("Inorder Traversal:");
+        InorderTraversal(root);
+        Console.WriteLine();
     }
 
     private void InorderTraversal(Node root)
     {
-        
+        if (root != null)
+        {
+            InorderTraversal(root.Left);
+            DisplayNode(root.Data);
+            InorderTraversal(root.Right);
+        }
     }
 
     public void PostorderTraversal()
     {
-        
+        Console.WriteLine("Postorder Traversal:");
+        PostorderTraversal(root);
+        Console.WriteLine();
     }
 
     private void PostorderTraversal(Node root)
     {
-       
+        if (root != null)
+        {
+            PostorderTraversal(root.Left);
+            PostorderTraversal(root.Right);
+            DisplayNode(root.Data);
+        }
     }
 
-    private void DisplayNode(Node node)
+    private void DisplayNode(T data)
     {
-        Console.WriteLine($"Data: {node.Data}");
+        if (data != null && data is Person person)
+        {
+            Console.WriteLine($"First Name: {person.FirstName}");
+            Console.WriteLine($"Last Name: {person.LastName}");
+            Console.WriteLine($"Age: {person.Age}");
+            Console.WriteLine($"Unique ID: {person.UniqueID}");
+            Console.WriteLine();
+        }
     }
-
 }

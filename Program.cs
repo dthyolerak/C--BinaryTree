@@ -1,4 +1,4 @@
-﻿// Program.cs
+﻿// BED-C0M-15-19 DONNEX THOLERA KAMSONGA
 using System;
 using System.IO;
 
@@ -46,41 +46,21 @@ class Program
     }
 
     static void LoadDataFromFile(string filePath)
-{
-    try
     {
-        if (File.Exists(filePath))
+        try
         {
-            // string[] lines = File.ReadAllLines(filePath);
-            // Read all lines and remove empty lines
-            string[] lines = File.ReadAllLines(filePath).Where(line => !string.IsNullOrWhiteSpace(line)).ToArray();
-
-            int currentIndex = 0;
-
-            while (currentIndex < lines.Length)
+            if (File.Exists(filePath))
             {
-                // Try to read a person's data
-                string firstName = lines[currentIndex];
-                currentIndex++;
+                // string[] lines = File.ReadAllLines(filePath);
+                // Read all lines and remove empty lines
+                string[] lines = File.ReadAllLines(filePath).Where(line => !string.IsNullOrWhiteSpace(line)).ToArray();
 
-                if (currentIndex >= lines.Length)
+                int currentIndex = 0;
+
+                while (currentIndex < lines.Length)
                 {
-                    Console.WriteLine("Error: Incomplete data for a person at line {0}. Skipping entry.", currentIndex);
-                    continue;
-                }
-
-                string lastName = lines[currentIndex];
-                currentIndex++;
-
-                if (currentIndex >= lines.Length)
-                {
-                    Console.WriteLine("Error: Incomplete data for a person at line {0}. Skipping entry.", currentIndex);
-                    continue;
-                }
-
-                int age;
-                if (int.TryParse(lines[currentIndex], out age))
-                {
+                    // Try to read a person's data
+                    string firstName = lines[currentIndex];
                     currentIndex++;
 
                     if (currentIndex >= lines.Length)
@@ -89,38 +69,58 @@ class Program
                         continue;
                     }
 
-                    string uniqueID = lines[currentIndex];
+                    string lastName = lines[currentIndex];
                     currentIndex++;
 
-                    Person person = new Person
+                    if (currentIndex >= lines.Length)
                     {
-                        FirstName = firstName,
-                        LastName = lastName,
-                        Age = age,
-                        UniqueID = uniqueID
-                    };
+                        Console.WriteLine("Error: Incomplete data for a person at line {0}. Skipping entry.", currentIndex);
+                        continue;
+                    }
 
-                    binaryTree.Insert(person);
+                    int age;
+                    if (int.TryParse(lines[currentIndex], out age))
+                    {
+                        currentIndex++;
+
+                        if (currentIndex >= lines.Length)
+                        {
+                            Console.WriteLine("Error: Incomplete data for a person at line {0}. Skipping entry.", currentIndex);
+                            continue;
+                        }
+
+                        string uniqueID = lines[currentIndex];
+                        currentIndex++;
+
+                        Person person = new Person
+                        {
+                            FirstName = firstName,
+                            LastName = lastName,
+                            Age = age,
+                            UniqueID = uniqueID
+                        };
+
+                        binaryTree.Insert(person);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Error parsing age for {firstName} {lastName} at line {currentIndex}. Skipping entry.");
+                        currentIndex++;  // Jump to the next line to avoid infinite loop
+                    }
                 }
-                else
-                {
-                    Console.WriteLine($"Error parsing age for {firstName} {lastName} at line {currentIndex}. Skipping entry.");
-                    currentIndex++;  // Jump to the next line to avoid infinite loop
-                }
+
+                Console.WriteLine("Data loaded successfully.");
             }
-
-            Console.WriteLine("Data loaded successfully.");
+            else
+            {
+                Console.WriteLine("Error: File not found.");
+            }
         }
-        else
+        catch (Exception ex)
         {
-            Console.WriteLine("Error: File not found.");
+            Console.WriteLine("An error occurred while loading data: {0}", ex.Message);
         }
     }
-    catch (Exception ex)
-    {
-        Console.WriteLine("An error occurred while loading data: {0}", ex.Message);
-    }
-}
     static void SearchByID()
     {
         Console.Write("Enter Unique ID to search: ");
