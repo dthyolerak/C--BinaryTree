@@ -1,4 +1,3 @@
-// BinaryTree.cs
 public class BinaryTree<T>
 {
     private class Node
@@ -40,6 +39,51 @@ public class BinaryTree<T>
             root.Right = InsertRec(root.Right, data);
 
         return root;
+    }
+
+    public T Search(Func<T, bool> predicate)
+    {
+        return Search(root, predicate);
+    }
+
+    private T Search(Node root, Func<T, bool> predicate)
+    {
+        if (root == null)
+            return default(T);
+
+        if (predicate(root.Data))
+            return root.Data;
+
+        T leftResult = Search(root.Left, predicate);
+        if (leftResult != null)
+            return leftResult;
+
+        return Search(root.Right, predicate);
+    }
+
+    public void InorderTraversal()
+    {
+        
+    }
+
+    private void InorderTraversal(Node root)
+    {
+        
+    }
+
+    public void PostorderTraversal()
+    {
+        
+    }
+
+    private void PostorderTraversal(Node root)
+    {
+       
+    }
+
+    private void DisplayNode(Node node)
+    {
+        Console.WriteLine($"Data: {node.Data}");
     }
 
 }

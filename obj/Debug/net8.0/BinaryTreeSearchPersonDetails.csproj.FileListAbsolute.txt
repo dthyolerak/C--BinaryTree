@@ -1,0 +1,14 @@
+E:\projects\C#\BinaryTreeSearchPersonDetails\bin\Debug\net8.0\BinaryTreeSearchPersonDetails.exe
+E:\projects\C#\BinaryTreeSearchPersonDetails\bin\Debug\net8.0\BinaryTreeSearchPersonDetails.deps.json
+E:\projects\C#\BinaryTreeSearchPersonDetails\bin\Debug\net8.0\BinaryTreeSearchPersonDetails.runtimeconfig.json
+E:\projects\C#\BinaryTreeSearchPersonDetails\bin\Debug\net8.0\BinaryTreeSearchPersonDetails.dll
+E:\projects\C#\BinaryTreeSearchPersonDetails\bin\Debug\net8.0\BinaryTreeSearchPersonDetails.pdb
+E:\projects\C#\BinaryTreeSearchPersonDetails\obj\Debug\net8.0\BinaryTreeSearchPersonDetails.GeneratedMSBuildEditorConfig.editorconfig
+E:\projects\C#\BinaryTreeSearchPersonDetails\obj\Debug\net8.0\BinaryTreeSearchPersonDetails.AssemblyInfoInputs.cache
+E:\projects\C#\BinaryTreeSearchPersonDetails\obj\Debug\net8.0\BinaryTreeSearchPersonDetails.AssemblyInfo.cs
+E:\projects\C#\BinaryTreeSearchPersonDetails\obj\Debug\net8.0\BinaryTreeSearchPersonDetails.csproj.CoreCompileInputs.cache
+E:\projects\C#\BinaryTreeSearchPersonDetails\obj\Debug\net8.0\BinaryTreeSearchPersonDetails.dll
+E:\projects\C#\BinaryTreeSearchPersonDetails\obj\Debug\net8.0\refint\BinaryTreeSearchPersonDetails.dll
+E:\projects\C#\BinaryTreeSearchPersonDetails\obj\Debug\net8.0\BinaryTreeSearchPersonDetails.pdb
+E:\projects\C#\BinaryTreeSearchPersonDetails\obj\Debug\net8.0\BinaryTreeSearchPersonDetails.genruntimeconfig.cache
+E:\projects\C#\BinaryTreeSearchPersonDetails\obj\Debug\net8.0\ref\BinaryTreeSearchPersonDetails.dll
