@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/BinaryTreeProject.csproj": {}
+    "E:\\projects\\C#\\C--BinaryTree\\BinaryTreeProject.csproj": {}
   },
   "projects": {
-    "/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/BinaryTreeProject.csproj": {
+    "E:\\projects\\C#\\C--BinaryTree\\BinaryTreeProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/BinaryTreeProject.csproj",
+        "projectUniqueName": "E:\\projects\\C#\\C--BinaryTree\\BinaryTreeProject.csproj",
         "projectName": "BinaryTreeProject",
-        "projectPath": "/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/BinaryTreeProject.csproj",
-        "packagesPath": "/home/infi-tech/.nuget/packages/",
-        "outputPath": "/home/infi-tech/Documents/sukulu/C#/BinaryTreeProject/obj/",
+        "projectPath": "E:\\projects\\C#\\C--BinaryTree\\BinaryTreeProject.csproj",
+        "packagesPath": "C:\\Users\\INFI-TECH\\.nuget\\packages\\",
+        "outputPath": "E:\\projects\\C#\\C--BinaryTree\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/infi-tech/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\INFI-TECH\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
